@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bad Script',cursive;
+}
+
+
+.diwali
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(3, 3, 3);
+    
+}
+h2{
+    display: flex;
+    color: transparent;
+    font-size: 8vw; 
+    
+}
+h2 span{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        color: #fff;
+        filter: blur(2px) hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff,
+    }
+    30%,70%{
+        color:  #00b3ff;
+        filter: blur(2px) hue-rotate(360deg);
+        text-shadow: 0 0 10px #9500ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        
+    }
+    100%{
+        color: transparent;
+        filter: blur(2px) hue-rotate(0deg);
+        box-shadow: none;
+    }
+} 
+.diwali_diyasLeft{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    width: 18vh;
+    height: 18vh;
+    border-radius: 50%;
+
+}
+
+.diwali_diyasRight{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 18vh;
+    height: 18vh;
+    border-radius: 50%;
+
+}
